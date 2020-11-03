@@ -24,7 +24,7 @@
       },
       methods: {
         getData: async function(){
-          const URL = `https://api.openweathermap.org/data/2.5/weather?id=1863958&units=metric&appid=ea89120ba85fc38f32f1eebc9063f758`;
+          const URL = `https://api.openweathermap.org/data/2.5/weather?id=1863958&units=metric&appid=xxxxx`;
           const response = await axios.get(URL);
           this.weather = response.data.weather[0].main;
           this.temp = response.data.main.temp;
